@@ -16,9 +16,9 @@
    version="1.1"
    inkscape:version="0.91 r13725"
    sodipodi:docname="icons.svg"
-   inkscape:export-filename="C:\Users\Giygas\Desktop\WebApp\ZeldaCooking\images\critter.png"
-   inkscape:export-xdpi="3.7253335"
-   inkscape:export-ydpi="3.7253335">
+   inkscape:export-filename="C:\Users\Giygas\Documents\GitHub\CassandraPeters.github.io\images\Conflict.png"
+   inkscape:export-xdpi="1.6933334"
+   inkscape:export-ydpi="1.6933334">
   <defs
      id="defs4" />
   <sodipodi:namedview
@@ -28,11 +28,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.37139014"
-     inkscape:cx="85.822209"
-     inkscape:cy="508.03668"
+     inkscape:zoom="0.3217022"
+     inkscape:cx="25.8234"
+     inkscape:cy="362.38456"
      inkscape:document-units="px"
-     inkscape:current-layer="layer2"
+     inkscape:current-layer="layer3"
      showgrid="false"
      inkscape:snap-object-midpoints="true"
      showguides="true"
@@ -139,7 +139,8 @@
      id="layer2"
      inkscape:label="Layer 2"
      transform="translate(0,10.629921)"
-     style="display:inline">
+     style="display:inline"
+     sodipodi:insensitive="true">
     <g
        id="g4392"
        transform="translate(577.22661,372.72347)" />
@@ -241,7 +242,7 @@
     </g>
     <g
        id="g4330"
-       transform="translate(-40.388745,-13.462931)">
+       transform="translate(1000.947,-526.35964)">
       <ellipse
          ry="137.3219"
          rx="91.547935"
@@ -313,8 +314,7 @@
      inkscape:groupmode="layer"
      id="layer3"
      inkscape:label="EffectImage"
-     style="display:none"
-     sodipodi:insensitive="true">
+     style="display:inline">
     <g
        id="g4167"
        transform="translate(-1022.419,53.310489)">
@@ -465,5 +465,19 @@
        cx="-598.79108"
        cy="709.81018"
        r="132.32425" />
+    <g
+       id="g4204">
+      <circle
+         r="394.77505"
+         cy="531.44452"
+         cx="540.87292"
+         id="path4200"
+         style="opacity:1;fill:none;fill-opacity:1;stroke:#ff0000;stroke-width:150;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:76.69999695;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path4202"
+         d="m 285.97877,239.24893 531.5475,596.82526"
+         style="fill:none;fill-rule:evenodd;stroke:#ff0000;stroke-width:150;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none" />
+    </g>
   </g>
 </svg>

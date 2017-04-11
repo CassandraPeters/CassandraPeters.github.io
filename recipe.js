@@ -9,11 +9,11 @@ function updateRecipe()
 	for (i = 0; i < recipeIngredients.length; i++) {
 		ing = recipeIngredients[i];
 		
-		if (recipe.effect == ing.effect || recipe.effect == "None" || ing.effect == "None") {
+		if (recipe.effect == ing.effect || recipe.effect == "None") {
 			recipe.effect = ing.effect;
 			recipe.level += ing.level;
 			recipe.duration += ing.duration;
-		} else {
+		} else if (ing.effect != "None") {
 			recipe.effect = "Conflict"; 
 			recipe.level = 0;
 			recipe.strength = 0;

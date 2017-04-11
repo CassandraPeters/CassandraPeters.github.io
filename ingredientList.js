@@ -28,7 +28,7 @@ function createIngredient(ing, div) {
 	
 	div.innerHTML += "<div class=\"itemContainer\">\n" +
 	"	<div class=\"itemImage listImage\"> <img src=\"images/"+ing["type"]+"/"+ing["name"]+".png\" alt=\"APPLE\"></div>\n" +
-	"	<div class=\"addButton listImage\"> <img src=\"images/addbutton.jpg\" alt=\"APPLE\" onclick=\"addToRecipe(this)\"> </div>\n" +
+	"	<div class=\"addButton listImage\"> <img src=\"images/icons/addbutton.jpg\" alt=\"APPLE\" onclick=\"addToRecipe(this)\"> </div>\n" +
 	"	<div class=\"itemInfo\">\n" +
 	"		<p class=\"left ingredientName\">"+ing["name"]+"</p>\n" +
 	"		<p class=\"right\">"+ing["type"]+"</p>\n" +

@@ -1,0 +1,204 @@
+body {
+    background-color: #444444;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-weight: bold;
+}
+
+h1 {
+    color: navy;
+    margin-left: 20px;
+}
+
+header {
+	width: 100%;
+	height: 54px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: #333333;
+	z-index: 100;
+}
+
+header button {
+	margin-top: 5px;
+	margin-left: calc(12% - 33px);
+	border-bottom: 3px solid #FFFFFF;
+	opacity: 1;
+}
+
+#catList {
+	margin-top: -5px;
+	margin-left: auto;
+	margin-right: auto;
+    list-style-type: none;
+    overflow: auto;
+	padding:0;
+	width: 270px;
+}
+.catItem {
+    float: left;
+	margin-top: 5px;
+	margin-left: 10px;
+	border-bottom: 3px solid #FFFFFF;
+    list-style-type: none;
+    text-align: center;
+    cursor: pointer;
+	opacity: 0.4;
+}
+
+.catItem:hover {
+	opacity: 0.7 !important;
+}
+
+#ingList {
+	margin: auto;
+	margin-top: 57px;
+	margin-bottom: 150px;
+}
+
+footer {
+	width: 100%;
+	height: 150px;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	background: #333333;
+	z-index: 100;
+}
+
+.recipe {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: -2px;
+	margin-bottom: -7px;
+    list-style-type: none;
+	height: 60px;
+	width: 275px;
+	padding:0;
+}
+.recipeItem {
+	margin-left: 5px;
+	margin-top: 5px;
+	float: left;
+    background: #222222;
+	border-radius: 4px;
+	border: 3px solid #777777;
+	height: 44px;
+	width: 44px;
+    cursor: pointer;
+}
+
+.recipeItem img {
+	height: 44px;
+	width: 44px;
+}
+
+/* STYLE OF ITEMS */
+div.itemContainer {
+	position: relative;
+    background-color: #222222;
+	border-radius: 4px;
+    margin: 5px;
+	border: 3px solid #777777;
+	height: 60px;
+}
+
+div.itemContainer p {
+	font-size: 0.75em;
+	font-style: italic;
+	margin: 3px;
+}
+
+.left {
+	float:left;
+}
+
+.right {
+	float:right;
+}
+
+div.itemInfo {
+    color: #ffffff;
+	width: calc(100% - 120px);
+	height: 15px;
+	margin: auto;
+	margin-top: inherit;
+}
+
+div.itemProperties {
+	height: 30px;
+}
+
+.itemImage {
+/*images must be 50x50 */
+	float: left;
+}
+
+.itemImage img {
+	height: 50px;
+}
+
+.addButton {
+	float: right;
+	cursor: pointer;
+}
+
+.listImage {
+	margin:inherit;
+	width: 50px;
+}
+
+div.itemEffects {
+	width: 18%;
+	border-left: 3px solid #dedede;
+	margin:3px 0 3px 0;
+	height:24px;
+	float: left;
+}
+
+div.healEffect {
+}
+
+div.specialEffect {
+}
+
+div.timeEffect {
+	width: 33%;
+}
+
+div.critEffect {
+}
+
+div.itemEffects p {
+	position: absolute;
+	float: left;
+	font-style: oblique;
+	bottom: 7px;
+	margin-left:20px;
+}
+
+div.critEffect p {
+	margin-left: 5px;
+}
+
+div.itemEffects img {
+	position:absolute;
+	float: left;
+	margin: 3px;
+}
+
+.catButton {
+	background-color: Transparent;
+	border:none;
+	border-bottom: 3px solid #FFFFFF;
+	outline: none;
+	width: 50px;
+	height: 50px;
+	opacity: 0.4;
+}
+.catButton:hover {
+	opacity: 0.7;
+}
+.catButton:active {
+	opacity: 1;
+}

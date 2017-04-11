@@ -1,0 +1,94 @@
+Bladed Rhino Beetle
+
+
+
+Mighty Carp
+Razorclaw Crab
+Mighty Porgy
+
+Rugged Rhino Beetle
+
+
+Armored Carp
+Ironshell Crab
+Armored Porgy
+
+
+
+
+Bright-Eyed Crab
+Staminoka Bass
+Energetic Rhino Beetle
+Hearty Bass
+Hearty Blueshell Snail
+Hearty Salmon
+
+Swift Violet
+
+
+Fairy
+Sanke Carp
+Bokoblin Horn
+Chuchu Jelly
+Keese Wing
+Lizalfos Horn
+Lynel Horn
+Moblin Horn
+Octorok Tentacle
+Chickaloo Tree Nut
+
+Star Fragment
+
+Bokoblin Fang
+Electric Keese Wing
+Fire Keese Wing
+Hinox Tooth
+Ice Keese Wing
+Lizalfos Talon
+Lynel Hoof
+Moblin Fang
+Molduga Fin
+Octorok Eyeball
+Red Chuchu Jelly
+White Chuchu Jelly
+Yellow Chuchu Jelly
+Fresh Milk
+Bird Egg
+Ancient Core
+Bokoblin Guts
+Giant Ancient Core
+Hinox Guts
+Icy Lizalfos Tail
+Keese Eyeball
+Lizalfos Tail
+Lynel Guts
+Moblin Guts
+Molduga Guts
+Octo Balloon
+Red Lizalfos Tail
+Yellow Lizalfos Tail
+Blue Nightshade
+Sunset Firefly
+Sneaky River Snail
+Silent Shroom
+Stealthfin Trout
+Silent Princess
+Summerwing Butterfly
+Warm Safflina
+Spicy Pepper
+Warm Darner
+Sunshroom
+Sizzlefin Trout
+Electric Safflina
+Thunderwing Butterfly
+Voltfruit
+Electric Darner
+Zapshroom
+Voltfin Trout
+Cool Safflina
+Winterwing Butterfly
+Hydromelon
+Cold Darner
+Chillshroom
+Chillfin Trout
+];

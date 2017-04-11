@@ -28,10 +28,34 @@ function getStrength(recipe)
 	var level = recipe["level"];
 	var strength = 1;
 	
-	if (!maxStrength2.includes(effectType) && level > ThirdLevel[effectType]) strength = 3;
-	else if (level > SecondLevel[effectType]) strength = 2;
+	if (maxStrength3.includes(effectType) && level >= ThirdLevel[effectType]) strength = 3;
+	else if (level >= SecondLevel[effectType]) strength = 2;
 	
 	return strength;
+}
+
+function maxStrength(recipe)
+{
+	var max = 3;
+	
+	if (maxStrength2.includes(recipe.effect)) max = 2;
+	
+	return max;
+}
+
+function createFractionText(recipe)
+{
+	var strength = getStrength(recipe);
+	var level = recipe.level;
+	goal = SecondLevel[recipe.effect];
+	if (strength == 2)
+	{
+		goal = ThirdLevel[recipe.effect];
+	}
+	
+	var result = "<div class=\"fraction\"><p class=\"numerator\">" + level + "</p><p class=\"denominator\">" + goal + "</p><img class=\"divide\" src=\"images/divide.png\">";
+	
+	return result;
 }
 
 function createItemHTML(item, itemType, div)
@@ -44,9 +68,18 @@ function createItemHTML(item, itemType, div)
 	var itemE = "<div class=\"itemEffects specialEffect\">\n" +
 	"<div class=\"effectIcon\"><img src=\"images/"+item["effect"]+".png\">\n";
 	if (countEffects.includes(item["effect"]) || (item["level"] > 0 && itemType == "ing")) itemE += 	"<p class=\"effectNumber\">"+item["level"]+"</p>\n";
-	else if (itemType == "rec")
+	else if (itemType == "rec" && item["effect"] != "None")
 	{
 		var strength = getStrength(item);
+		if (strength > 1) 
+		{
+			itemE += "</div><div class=\"effectIcon\"><img src=\"images/"+item["effect"]+".png\">\n";
+			if (strength > 2) itemE += "</div><div class=\"effectIcon\"><img src=\"images/"+item["effect"]+".png\">\n";
+		}
+		if (strength < maxStrength(item))
+		{
+			itemE += "</div>" + createFractionText(item);
+		}
 	}
 	itemE += "</div></div>\n";
 	

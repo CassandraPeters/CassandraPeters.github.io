@@ -36,9 +36,11 @@ function updateRecipe()
 	if (minutes < 10) minutes = "0" + minutes;
 	if (seconds < 10) seconds = "0" + seconds;
 	div = document.getElementById("recipe");
-	div.innerHTML =
+	div.innerHTML = "";
+	createItemHTML(recipe, "rec", div);
+	/*div.innerHTML =
 	"	<div class=\"itemImage listImage\"> <img src=\"images/"+recipe["type"]+"/"+recipe["name"]+".png\" alt=\"APPLE\"></div>\n"+
-	"	<div class=\"itemInfo\">\n" +
+	"	<div class=\"itemInfo recInfo\">\n" +
 	"		<p class=\"left ingredientName\">"+recipe["name"]+"</p>\n" +
 	"		<p class=\"right\">"+recipe["type"]+"</p>\n" +
 	"	</div>\n" +
@@ -58,7 +60,7 @@ function updateRecipe()
 	"		<div class=\"itemEffects critEffect\">\n" +
 	"			<p>"+recipe["critChance"]+"%</p>\n" +
 	"		</div>\n" +
-	"	</div>\n";
+	"	</div>\n";*/
 }
 
 function addIngredient(ing) {

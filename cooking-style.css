@@ -117,9 +117,16 @@ div.itemContainer p {
 	float:right;
 }
 
+div.ingInfo {
+	width: calc(100% - 120px);
+}
+
+div.recInfo {
+	width: calc(100% - 60px);
+}
+
 div.itemInfo {
     color: #ffffff;
-	width: calc(100% - 120px);
 	height: 15px;
 	margin: auto;
 	margin-top: inherit;

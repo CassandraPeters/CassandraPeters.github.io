@@ -1,0 +1,11 @@
+AttackUp
+DefenseUp
+MovingSpeed
+Fireproof
+Quietness
+ResistCold
+ResistHot
+ResistElectric
+ExGutsMaxUp
+GutsRecover
+LifeMaxUp

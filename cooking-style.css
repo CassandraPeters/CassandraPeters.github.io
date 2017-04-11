@@ -118,11 +118,11 @@ div.itemContainer p {
 }
 
 div.ingInfo {
-	width: calc(100% - 120px);
+	width: 100%;
 }
 
 div.recInfo {
-	width: calc(100% - 60px);
+	width: 100%;
 }
 
 div.itemInfo {
@@ -157,11 +157,12 @@ div.itemProperties {
 }
 
 div.itemEffects {
-	width: 12%;
+	width: 10%;
 	border-left: 3px solid #dedede;
 	margin:3px 0 3px 0;
 	height:24px;
 	float: left;
+	white-space: nowrap;
 }
 
 div.healEffect {
@@ -175,7 +176,6 @@ div.timeEffect {
 }
 
 div.critEffect {
-	width:7%;
 }
 
 p.effectNumber {

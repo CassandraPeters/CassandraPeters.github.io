@@ -127,6 +127,7 @@ div.itemInfo {
 
 div.itemProperties {
 	height: 30px;
+	font-style: oblique;
 }
 
 .itemImage {
@@ -169,12 +170,42 @@ div.timeEffect {
 div.critEffect {
 }
 
-div.itemEffects p {
-	position: absolute;
+p.effectNumber {
+	position: relative;
 	float: left;
-	font-style: oblique;
-	bottom: 7px;
-	margin-left:20px;
+	left:15px;
+	top: 7px;
+}
+
+div.effectIcon {
+	float: left;
+	height:20px;
+	width:20px;
+}
+
+div.fraction {
+	position:relative;
+	float: left;
+	height:20px;
+	width:20px;
+	font-size:0.75em;
+}
+
+img.divide {
+	float:left;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+p.numerator {
+	position: absolute;
+}
+
+p.denominator {
+	position: absolute;
+	right:-4px;
+	bottom:-6px;
 }
 
 div.critEffect p {

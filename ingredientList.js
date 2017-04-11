@@ -26,6 +26,11 @@ function createIngredient(ing, div) {
 	if (minutes < 10) minutes = "0" + minutes;
 	if (seconds < 10) seconds = "0" + seconds;
 	
+	var itemE = "		<div class=\"itemEffects specialEffect\">\n" +
+	"	<div class=\"effectIcon\"><img src=\"images/"+ing["effect"]+".png\">\n";
+	if (ing["level"] > 0) itemE += 	"			<p class=\"effectNumber\">"+ing["level"]+"</p>\n";
+	itemE += "		</div></div>\n";
+	
 	div.innerHTML += "<div class=\"itemContainer\">\n" +
 	"	<div class=\"itemImage listImage\"> <img src=\"images/"+ing["type"]+"/"+ing["name"]+".png\" alt=\"APPLE\"></div>\n" +
 	"	<div class=\"addButton listImage\"> <img src=\"images/icons/addbutton.jpg\" alt=\"APPLE\" onclick=\"addToRecipe(this)\"> </div>\n" +
@@ -36,18 +41,15 @@ function createIngredient(ing, div) {
 	"	<div class=\"itemInfo itemProperties\" >\n" +
 	"		<div class=\"itemEffects healEffect\">\n" +
 	"			<img src=\"images/heart.png\">\n" +
-	"			<p>"+ing["hearts"]+"</p>\n" +
+	"			<p class=\"effectNumber\">"+ing["hearts"]+"</p>\n" +
 	"		</div>\n" +
-	"		<div class=\"itemEffects specialEffect\">\n" +
-	"			<img src=\"images/"+ing["effect"]+".png\">\n" +
-	"			<p>"+ing["level"]+"</p>\n" +
-	"		</div>\n" +
+				itemE +
 	"		<div class=\"itemEffects timeEffect\">\n" +
 	"			<img src=\"images/hourglass.png\">\n" +
-	"			<p>"+minutes+":"+seconds+"</p>\n" +
+	"			<p class=\"effectNumber\">"+minutes+":"+seconds+"</p>\n" +
 	"		</div>\n" +
 	"		<div class=\"itemEffects critEffect\">\n" +
-	"			<p>"+ing["critChance"]+"%</p>\n" +
+	"			<p class=\"effectNumber\">"+ing["critChance"]+"%</p>\n" +
 	"		</div>\n" +
 	"	</div>\n" +
 	"</div>\n";

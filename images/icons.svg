@@ -16,7 +16,7 @@
    version="1.1"
    inkscape:version="0.91 r13725"
    sodipodi:docname="icons.svg"
-   inkscape:export-filename="C:\Users\Giygas\Documents\GitHub\CassandraPeters.github.io\images\Conflict.png"
+   inkscape:export-filename="C:\Users\Giygas\Documents\GitHub\CassandraPeters.github.io\images\fraction.png"
    inkscape:export-xdpi="1.6933334"
    inkscape:export-ydpi="1.6933334">
   <defs
@@ -28,9 +28,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.3217022"
-     inkscape:cx="25.8234"
-     inkscape:cy="362.38456"
+     inkscape:zoom="0.55732393"
+     inkscape:cx="524.44969"
+     inkscape:cy="421.16525"
      inkscape:document-units="px"
      inkscape:current-layer="layer3"
      showgrid="false"
@@ -466,7 +466,8 @@
        cy="709.81018"
        r="132.32425" />
     <g
-       id="g4204">
+       id="g4204"
+       transform="translate(157.8974,-1083.7503)">
       <circle
          r="394.77505"
          cy="531.44452"
@@ -477,7 +478,17 @@
          inkscape:connector-curvature="0"
          id="path4202"
          d="m 285.97877,239.24893 531.5475,596.82526"
-         style="fill:none;fill-rule:evenodd;stroke:#ff0000;stroke-width:150;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none" />
+         style="fill:none;fill-rule:evenodd;stroke:#ff0000;stroke-width:150;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     </g>
+    <rect
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:150;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:76.69999695;stroke-opacity:1"
+       id="rect4203"
+       width="1333.5946"
+       height="77.792969"
+       x="-668.61273"
+       y="717.82739"
+       ry="38.896484"
+       rx="0"
+       transform="matrix(0.70710678,-0.70710678,0.70710678,0.70710678,0,0)" />
   </g>
 </svg>

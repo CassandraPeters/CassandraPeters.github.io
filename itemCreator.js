@@ -65,7 +65,11 @@ function createItemHTML(item, itemType, div)
 	if (minutes < 10) minutes = "0" + minutes;
 	if (seconds < 10) seconds = "0" + seconds;
 	
-	var itemE = "<div class=\"itemEffects specialEffect\">\n" +
+	var recSE = "";
+	
+	if (itemType == "rec") recSE = " recipeSE";
+	
+	var itemE = "<div class=\"itemEffects specialEffect"+recSE+"\">\n" +
 	"<div class=\"effectIcon\"><img src=\"images/"+item["effect"]+".png\">\n";
 	if (countEffects.includes(item["effect"]) || (item["level"] > 0 && itemType == "ing")) itemE += 	"<p class=\"effectNumber\">"+item["level"]+"</p>\n";
 	else if (itemType == "rec" && item["effect"] != "None")

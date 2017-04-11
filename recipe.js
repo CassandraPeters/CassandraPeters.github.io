@@ -4,10 +4,19 @@ var recipe;
 
 function updateRecipe()
 {
-	recipe = {name:"NOT A NAME", type:"Meal or Elixer", effect:"None", level:0, strength:0, duration:0, hearts:0, critChance:0};
-	var ing;
+	recipe = {name:"NOT A NAME", type:"Meal or Elixir", effect:"None", level:0, strength:0, duration:0, hearts:0, critChance:0};
+	var ing, rType;
+	var hasMonPart = false;
+	var hasCritter = false;
+	var hasFood = false;
 	for (i = 0; i < recipeIngredients.length; i++) {
 		ing = recipeIngredients[i];
+		
+		if (ing.type == "Food") hasFood = true;
+		else if (ing.type == "MonsterPart") hasMonPart = true;
+		else if (ing.type == "Critter") hasCritter = true;
+		
+		recipe.hearts += ing.hearts;
 		
 		if (recipe.effect == ing.effect || recipe.effect == "None" || ing.effect == "None") {
 			if (ing.effect != "None")
@@ -21,46 +30,41 @@ function updateRecipe()
 			recipe.duration = 0;
 		}
 		
-		recipe.hearts += ing.hearts;
-		
 		if (ing.critChance > recipe.critChance) recipe.critChance = ing.critChance;
 		
 		var ingplace = document.getElementById("ing"+(i+1));
-		ingplace.src = "images/"+ing["type"]+"/"+ing["name"]+".png"
+		ingplace.src = "images/"+ing["type"]+"/"+ing["name"]+".png";
 	}
 	
-	var dur = recipe["duration"];
-	if (dur > 1800) dur = 1800;
-	var minutes = Math.floor(dur / 60);
-	var seconds = dur % 60;
-	if (minutes < 10) minutes = "0" + minutes;
-	if (seconds < 10) seconds = "0" + seconds;
+	if (hasMonPart && hasCritter)
+	{
+		recipe.name = "Elixir";
+		recipe.type = "Elixir";
+		recipe.duration += 30;
+	}
+	else if (hasFood && !hasMonPart && !hasCritter)
+	{
+		recipe.name = "Meal";
+		recipe.type = "Meal";
+	}
+	else if (recipeIngredients.length > 0)
+	{
+		recipe.name = "Dubious Food";
+		recipe.type = "Meal";
+		recipe.effect = "Conflict";
+	}
+	else
+	{
+		recipe.name = "None";
+		recipe.type = "None";
+	}
+	
+	
+	
+	if (recipe.duration > 1800) recipe.duration = 1800;
 	div = document.getElementById("recipe");
 	div.innerHTML = "";
 	createItemHTML(recipe, "rec", div);
-	/*div.innerHTML =
-	"	<div class=\"itemImage listImage\"> <img src=\"images/"+recipe["type"]+"/"+recipe["name"]+".png\" alt=\"APPLE\"></div>\n"+
-	"	<div class=\"itemInfo recInfo\">\n" +
-	"		<p class=\"left ingredientName\">"+recipe["name"]+"</p>\n" +
-	"		<p class=\"right\">"+recipe["type"]+"</p>\n" +
-	"	</div>\n" +
-	"	<div class=\"itemInfo itemProperties\" >\n" +
-	"		<div class=\"itemEffects healEffect\">\n" +
-	"			<img src=\"images/heart.png\">\n" +
-	"			<p>"+recipe["hearts"]+"</p>\n" +
-	"		</div>\n" +
-	"		<div class=\"itemEffects specialEffect\">\n" +
-	"			<img src=\"images/"+recipe["effect"]+".png\">\n" +
-	"			<p>"+recipe["level"]+"</p>\n" +
-	"		</div>\n" +
-	"		<div class=\"itemEffects timeEffect\">\n" +
-	"			<img src=\"images/hourglass.png\">\n" +
-	"			<p>"+minutes+":"+seconds+"</p>\n" +
-	"		</div>\n" +
-	"		<div class=\"itemEffects critEffect\">\n" +
-	"			<p>"+recipe["critChance"]+"%</p>\n" +
-	"		</div>\n" +
-	"	</div>\n";*/
 }
 
 function addIngredient(ing) {

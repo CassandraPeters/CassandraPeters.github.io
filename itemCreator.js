@@ -72,7 +72,7 @@ function createItemHTML(item, itemType, div)
 	var itemE = "<div class=\"itemEffects specialEffect"+recSE+"\">\n" +
 	"<div class=\"effectIcon\"><img src=\"images/"+item["effect"]+".png\">\n";
 	if (countEffects.includes(item["effect"]) || (item["level"] > 0 && itemType == "ing")) itemE += 	"<p class=\"effectNumber\">"+item["level"]+"</p>\n";
-	else if (itemType == "rec" && item["effect"] != "None")
+	else if (itemType == "rec" && item["effect"] != "None" && item.effect != "Conflict")
 	{
 		var strength = getStrength(item);
 		if (strength > 1) 

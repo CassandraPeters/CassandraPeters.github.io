@@ -39,7 +39,7 @@ function createItemHTML(item, itemType, div)
 	"			<p class=\"effectNumber\">"+minutes+":"+seconds+"</p>\n" +
 	"		</div>\n" +
 	"		<div class=\"itemEffects critEffect\">\n" +
-	"			<p class=\"effectNumber\">"+item["critChance"]+"%</p>\n" +
+	"			<p class=\"critNumber\">"+item["critChance"]+"%</p>\n" +
 	"		</div>\n" +
 	"	</div>\n";
 	

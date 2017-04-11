@@ -157,7 +157,7 @@ div.itemProperties {
 }
 
 div.itemEffects {
-	width: 18%;
+	width: 12%;
 	border-left: 3px solid #dedede;
 	margin:3px 0 3px 0;
 	height:24px;
@@ -171,16 +171,24 @@ div.specialEffect {
 }
 
 div.timeEffect {
-	width: 33%;
+	width: 25%;
 }
 
 div.critEffect {
+	width:7%;
 }
 
 p.effectNumber {
 	position: relative;
 	float: left;
 	left:15px;
+	top: 7px;
+}
+
+p.critNumber {
+	position: relative;
+	float: left;
+	left:0;
 	top: 7px;
 }
 

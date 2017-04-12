@@ -1,5 +1,6 @@
 body {
     background-color: #444444;
+	color: #FFFFFF;
     font-family: "Trebuchet MS", Helvetica, sans-serif;
 	font-weight: bold;
 }
@@ -252,4 +253,19 @@ div.itemEffects img {
 }
 .catButton:active {
 	opacity: 1;
+}
+
+#InfoCredit {
+	font-size: 0.75em;
+	font-style: italic;
+	margin-top: 3px;
+	margin-left: 7px;
+}
+
+a :link {
+	color:white;
+}
+
+a:visited {
+	color:white;
 }
